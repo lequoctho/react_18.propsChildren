@@ -17,7 +17,7 @@ class Modal extends Component {
 
   render() {
       const { visiable } = this.state;
-      const { children } = this.props;
+      const { content } = this.props;
       return <div> 
             <input id="myBtn" type="button" onClick={this.onClickModal} value="Modal"/>
             
@@ -29,7 +29,7 @@ class Modal extends Component {
                   <h2>This is a modal 1</h2>
                 </div>
                 <div className="modal-content">
-                  <p>{children}</p>
+                  <p>{content}</p>
                 </div>
                 <div className="modal-footer">
                   <h3>Modal Footer</h3>
